@@ -1,0 +1,7 @@
+* {
+    font-family: 'poppins';
+}
+
+.nav-link:hover {
+    background-color: blue;
+}
