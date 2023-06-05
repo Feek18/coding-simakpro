@@ -3,10 +3,10 @@
 	{
 		function proseslogin()
 		{
-			$Username=$this->input->post('Username');
-			$Password=$this->input->post('Password');
-			$sql="select * from tblogin where Username='".$Username."' ";
-			$sql.="and Password='".$Password."'";
+			$Username=$this->input->post('username');
+			$Password=$this->input->post('password');
+			$sql="select * from tb_login where username='".$Username."' ";
+			$sql.="and password='".$Password."'";
 			$query=$this->db->query($sql);
 			if ($query->num_rows()>0)
 			{

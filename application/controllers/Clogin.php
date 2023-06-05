@@ -9,7 +9,7 @@
 		function formlogin()
 		{
 			$data['konten']=$this->load->view('formlogin','',TRUE);
-			$this->load->view('tampilanlogin',$data);	
+			$this->load->view('formlogin',$data);	
 		}
 		
 		function proseslogin()

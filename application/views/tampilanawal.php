@@ -12,6 +12,10 @@
         body {
             font-family: 'Open Sans';
         }
+
+        #contact .col-6 {
+            position: relative;
+        }
     </style>
 
     <!-- Logo bar -->
@@ -24,7 +28,7 @@
 
 <body>
     <section id="header"
-        style="background-image: url('<?php echo base_url(); ?>/assets/bgheader.png'); background-repeat: no-repeat; background-size: 100%; padding-top: 12px;">
+        style="background-image: url('<?php echo base_url(); ?>/assets/bgheader.png'); background-repeat: no-repeat; background-size: 100%; padding-top: 0px;">
         <nav class="navbar navbar-expand-lg bg-tranparant">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -58,7 +62,7 @@
                     </ul>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modallogin"
                         style="background: #FBC102; color: white; text-decoration: none; margin: 15px; padding: 6px 22px; margin-right: -7px;">
-                        Login
+                        <a class="dropdown-item" href="<?php echo base_url('clogin/formlogin') ?>">Login</a>
                     </button>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalregis"
                         style=" color: white; text-decoration: none; margin: 15px; padding: 6px 22px;">
@@ -113,41 +117,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="program">
-            <div class="row">
-                <div class="col-12 text-center" style="text-align: center;">
-                    <p
-                        style="font-style: normal; font-weight: 600; font-size: 18px; line-height: 25px; text-transform: uppercase; color: #253C56;">
-                        Programs</p>
-                    <h2
-                        style="font-style: normal; font-weight: 800; font-size: 38px; line-height: 52px; text-align: center; text-transform: uppercase; color: #253C56;">
-                        Kegiatan Program Studi TRPL</h2>
-                    <p
-                        style="font-style: normal; font-weight: 400; font-size: 16px; line-height: 35px; text-align: center; color: #5A5A5A;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum neque nemo doloribus tenetur</p>
-                </div>
-                <div class="col-6" style="padding: 25px;">
-                    <div class="card" style="background: #253C56;">
-                        <img style="width: 50%;" src="<?php echo base_url(); ?>/assets/imagep.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6" style="padding: 25px;">
-                    <div class="card">
-                        <img style="width: 50%;" src="<?php echo base_url(); ?>/assets/imagep.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6" style="padding: 25px;">
-                    <div class="card" style="background: #FBC102;">
-                        <img style="width: 50%;" src="<?php echo base_url(); ?>/assets/imagep.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6" style="padding: 25px;">
-                    <div class="card">
-                        <img style="width: 50%;" src="<?php echo base_url(); ?>/assets/imagep.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section id="galery"
             style="padding: 13px 128px; display: flex; justify-content: space-between; align-items: center;">
             <div class="row" style="padding-top: 100px;">
@@ -160,7 +129,7 @@
                         Album Kegiatan</h2>
                     <div style="width: 45px; height: 7px; background-color: #FBC102; margin-bottom: 32px;"></div>
                     <p
-                        style="font-family: 'Montserrat'; font-style: italic; font-weight: 500; font-size: 24px; line-height: 35px; color: #253C56;">
+                        style="font-family: 'Montserrat'; font-style: italic; font-weight: 500; font-size: 20px; line-height: 35px; color: #253C56;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
                         mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet consec.</p>
                 </div>
@@ -168,13 +137,13 @@
                     <div id="carouselExample" class="carousel slide" style="width: 74%; margin-left: 120px;">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo base_url(); ?>/assets/1.png" class="d-block w-100" alt="...">
+                                <img src="<?php echo base_url(); ?>/assets/gmbr1.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo base_url(); ?>/assets/2.png" class="d-block w-100" alt="...">
+                                <img src="<?php echo base_url(); ?>/assets/gmbr2.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo base_url(); ?>/assets/3.png" class="d-block w-100" alt="...">
+                                <img src="<?php echo base_url(); ?>/assets/mhsprestasi.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -192,22 +161,21 @@
             </div>
         </section>
         <section id="contact"
-            style="background: #F9F9F9; display: flex; align-items: center; justify-content: space-between; column-gap: 17px; margin-top: 105px;">
+            style="background: #F9F9F9; display: flex; align-items: center; justify-content: space-between; column-gap: 17px; margin-top: 108px;">
             <div class="row">
                 <div class="col-6">
                     <h2
                         style="font-style: normal; font-weight: 800; font-size: 20px; line-height: 27px; text-transform: uppercase; color: #253C56; margin-bottom: 24px;">
                         Teknologi Rekayasa Perangkat Lunak</h2>
-                    <p style="font-style: normal; font-weight: 400; font-size: 16px; line-height: 35px; color: #5A5A5A;">
+                    <p style="font-style: normal; font-weight: 400; font-size: 15px; line-height: 35px; color: #5A5A5A;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
                         mattis, pulvinar dapibus leo.</p>
                 </div>
                 <div class="col-6">
-                    <div class="input-group" style="padding-top: 64px; margin-left: 32px">
-                        <input style="" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                            aria-describedby="search-addon" />
-                        <button type="button" class="btn btn-outline-primary">search</button>
-                    </div>
+                    <form class="d-flex" role="search" style="margin-top: 50px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -233,7 +201,7 @@
         }
         ?>
 
-    <!-- Modal Login -->
+    <!-- Modal Login
     <div class="modal" tabindex="-1" id="modallogin" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -257,12 +225,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-primary" onclick="proseslogin();">Login</button>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Modal Registrasi -->
     <div class="modal" tabindex="-1" id="modalregis" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -298,13 +266,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Sign Up Now</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
