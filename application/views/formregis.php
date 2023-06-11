@@ -19,6 +19,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login {
+            height: 100vh;
+        }
+
+        .header h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 46px;
+            letter-spacing: 0.25px;
+            color: #212121;
+            mix-blend-mode: normal;
+            opacity: 0.87;
+        }
+
+        .header p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.444444px;
+            color: #212121;
+            opacity: 0.6;
+        }
+
+        .login-form label {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #000;
+        }
+
+        .login-form input {
+            background-color: #fff;
+            border: 1px solid #A9A9A9;
+            box-sizing: border-box;
+            border-radius: 9px;
+        }
+
+        .login-form a {
+            margin-top: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #3A86FF;
+            mix-blend-mode: normal;
+            opacity: 0.87;
+        }
+
+        button {
+            margin-top: 19px;
+            float: right;
+            border-radius: 7px;
+            text-decoration: none;
+            font-style: normal;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 1.54286px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 12px 40px;
+            border: none;
+        }
+
+        .mb-3 {
+            margin-top: 12px;
+        }
+
+    </style>
+
+
 </head>
 
 <body>
@@ -31,13 +113,15 @@
                         <p>Please fill to access login page</p>
                     </div>
                     <div class="login-form">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                            placeholder="Enter your email...">
-
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" aria-describedby="emailHelp"
-                            placeholder="Enter your password...">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username"placeholder="Masukan Username Anda" name="username">
+                    </div>
+                       
+                    <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password"placeholder="Masukan Password Anda" name="password">
+                        </div>
+                      
 
 
                         <button class="bg-primary">
@@ -48,8 +132,8 @@
             </div>
         </div>
 
-        <div style="background-color: #526D82" class="logint-right w-50 h-100">
-
+        <div style="background-color: #264653;" class="logint-right w-50 h-100">
+            <img style="padding-top: 190px; padding-left: 180px;" class="img-right" src="<?php echo base_url('assets/img/edu.png'); ?>" alt="">
         </div>
 
 

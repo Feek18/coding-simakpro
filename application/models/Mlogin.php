@@ -12,14 +12,14 @@
 			{
 				//ada ada di database
 				$data=$query->row();
-				$NamaLengkap=$data->NamaLengkap;
-				$Level=$data->Level;
+				$Username=$data->Username;
+				$Password=$data->Password;
 				$array=array(
-					'NamaLengkap'=>$NamaLengkap,
-					'Level'=>$Level
+					'username'=>$Username,
+					'password'=>$Password
 				);
 				$this->session->set_userdata($array);
-				redirect('cadmin/formadmin','refresh');
+				redirect('clogin/indexdashboard','refresh');
 			}
 			else
 			{

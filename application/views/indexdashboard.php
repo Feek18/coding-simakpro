@@ -124,7 +124,7 @@
         <!-- ============================================================== -->
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
+            <div style="background-color: background: #253C56;" xclass="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
@@ -134,7 +134,7 @@
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="pages-profile.html" aria-expanded="false"><i class="fa-solid fa-gear"></i><span 
-                                    class="hide-menu">Programs</span></a></li>
+                                    class="hide-menu">Management User</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="table-basic.html" aria-expanded="false"><i class="fa-solid fa-file"></i><span
                                     class="hide-menu">Report</span></a></li>
@@ -187,7 +187,7 @@
                             <p style="font-size: 26px; color: #fff; font-weight: bold; line-height: 30px; padding-left: 10px; margin-top: 11px; display: inline-block;">120</br><span style="font-size: 16px; font-weight: 400; color: #F5F5F5;">Total Program</span></p>
                             <i style="font-size: 40px!important; float: right; margin-top: 20px; color: #fff; padding-right: 10px;" class="fa-solid fa-book box-icon"></i>
                             <div>
-                                <a style="font-size: 13px; padding: 5px 15px; background-color: #ECF8F9; float: right; font-weight: 450; color: #27374D;" class="btn" href="">See More</a>
+                                <a style="font-size: 13px; padding: 5px 15px; background-color: #ECF8F9; float: right; font-weight: 450; color: #27374D;" class="btn" href="#">See More</a>
                             </div>
                         </div>
                     </div>

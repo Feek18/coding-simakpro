@@ -11,6 +11,12 @@
 			$data['konten']=$this->load->view('formlogin','',TRUE);
 			$this->load->view('formlogin',$data);	
 		}
+
+		function formregis()
+		{
+			$data['konten']=$this->load->view('formregis','',TRUE);
+			$this->load->view('formregis',$data);	
+		}
 		
 		function proseslogin()
 		{

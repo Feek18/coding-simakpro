@@ -79,7 +79,7 @@
             opacity: 0.87;
         }
 
-        .login-form button {
+        button {
             margin-top: 19px;
             float: right;
             border-radius: 7px;
@@ -94,6 +94,11 @@
             padding: 12px 40px;
             border: none;
         }
+
+        .mb-3 {
+            margin-top: 12px;
+        }
+
     </style>
 
 
@@ -104,33 +109,37 @@
         <div class="login-left w-50 h-100">
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-6">
-                    <form action="<?php echo base_url('clogin/proseslogin'); ?>">
+                    <form id="formlogin" name="formlogin" method="post"
+                        action="<?php echo base_url('clogin/proseslogin'); ?>">
                         <div class="header">
                             <h2>Login Account</h2>
                             <p>Welcome back! Please fill in the blank</p>
                         </div>
                         <div class="login-form">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                placeholder="Enter your email...">
-
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" aria-describedby="emailHelp"
-                                placeholder="Enter your password...">
-
-                            <a href="#" class="text-decoration-none">Forgot password?</a>
-
-                            <button class="bg-primary">
-                                SIGN IN
-                            </button>
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Masukan Username Anda"
+                                name="username">
                         </div>
-                    </form>
+
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Masukan Password Anda" name="password">
+                        </div>
+
+                        <a href="#" class="text-decoration-none">Forgot password?</a>
+
+                        <button class="bg-primary" type="submit">
+                            SIGN IN
+                        </button>
                 </div>
+                    </form>
             </div>
+        </div>
         </div>
 
         <div style="background-color: #526D82" class="logint-right w-50 h-100">
-
+            <img style="padding-top: 190px; padding-left: 180px;" class="img-right" src="<?php echo base_url('assets/img/edu.png'); ?>" alt="">
         </div>
 
 

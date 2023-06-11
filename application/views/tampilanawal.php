@@ -60,13 +60,13 @@
                             <a class="nav-link" href="#contact" style="color: white; font-size: 16px;">Contact Us</a>
                         </li>
                     </ul>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modallogin"
-                        style="background: #FBC102; color: white; text-decoration: none; margin: 15px; padding: 6px 22px; margin-right: -7px;">
-                        <a class="dropdown-item" href="<?php echo base_url('clogin/formlogin') ?>">Login</a>
+                    <button type="button" class="btn"
+                        style="border: none; background: #FBC102; color: #fff; margin-right: 0px;">
+                        <a style="color: #fff; text-decoration: none; margin: 15px; padding: 2px 6px;" href="<?php echo base_url('clogin/formlogin') ?>">Login</a>
                     </button>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalregis"
-                        style=" color: white; text-decoration: none; margin: 15px; padding: 6px 22px;">
-                        Register
+                    <button type="button" class="btn"
+                        style="text-decoration: none; margin: 15px; padding: 6px 22px;">
+                        <a style="color: #fff; margin: 15px; padding: 2px 6px; text-decoration: none;" href="<?php echo base_url('clogin/formregis') ?>">Register</a>
                     </button>
                 </div>
             </div>
